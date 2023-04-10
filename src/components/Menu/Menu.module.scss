@@ -3,6 +3,7 @@
     height: var(--heightMenu);
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 
     .content {
         height: 100%;

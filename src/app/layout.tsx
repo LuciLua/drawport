@@ -1,6 +1,10 @@
+'use client'
+
 import "../styles/globals.scss"
 import { Montserrat } from "next/font/google"
 import Menu from "../components/Menu/Menu"
+
+import { AnimatePresence } from "framer-motion"
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
@@ -15,7 +19,10 @@ export default function RootLayout({ children }) {
             </head>
             <body className={montserrat.className}>
                 <Menu />
-                {children}
+                <AnimatePresence mode="wait">
+                    {children}
+                </AnimatePresence>
+
             </body>
         </html>
     )
