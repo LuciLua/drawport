@@ -1,10 +1,10 @@
-'use client'
+// 'use client'
 
-import "../styles/globals.scss"
+import "../styles/globals.css"
 import { Montserrat } from "next/font/google"
-import Menu from "../components/Menu/Menu"
+import Menu from "../components/Menu"
 
-import { AnimatePresence } from "framer-motion"
+// import { AnimatePresence } from "framer-motion"
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
@@ -17,12 +17,9 @@ export default function RootLayout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>LuciLua | Cinema Portfólio</title>
             </head>
-            <body className={montserrat.className}>
+            <body className={`${montserrat.className}`}>
                 <Menu />
-                <AnimatePresence mode="wait">
-                    {children}
-                </AnimatePresence>
-
+                {children}
             </body>
         </html>
     )

@@ -19,3 +19,8 @@ body {
     --heightMenu: 100px;
     --maxWidthContent: 1400px;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
