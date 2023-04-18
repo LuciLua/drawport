@@ -6,7 +6,7 @@ import Link from "next/link"
 
 function Apresentation() {
     return (
-        <div className="w-full max-w-max-w-content flex justify-center items-center flex-wrap gap-[60px] min-h-[80dvh] 
+        <div className="w-full max-w-max-w-content flex justify-center items-center flex-wrap gap-[60px] min-h-[80dvh] my-10 relative
         before:bg-[#96969611] before:w-[50em] before:h-[50em] before:absolute before:top-[-200px] before:left-[-400px] before:content-['a'] z-[1] before:rounded-[60%]">
             <div className="max-w-[250px] flex flex-col">
                 <h1 className="text-[20px] font-[600] text-[#bbbbbb] flex">Olá, sou <br /></h1>
@@ -17,7 +17,7 @@ function Apresentation() {
                     <Link className="rounded-[30px] border-[#3c3c3c] px-[15px] py-[20px] bg-[#3c3c3c] w-fit h-[30px] text-[#fff] flex justify-center items-center text-[15px]" href={'#'}>Projetos</Link>
                 </div >
             </div >
-            <div className="absolute flex flex-col gap-[30px] left-[20px] z-[2]">
+            <div className="absolute flex-col gap-[30px] left-[20px] z-[2] hidden lg:flex">
                 <Link href={'https://www.instagram.com/luci_lua81/'} className="text-[#121212] text-[20px] opacity-[0.8] transition-[0.3s] hover:opacity-[1] hover:scale-[1.1] hover:transition-[0.3s]">
                     <BsInstagram />
                 </Link>

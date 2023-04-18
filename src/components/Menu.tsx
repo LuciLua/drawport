@@ -2,7 +2,7 @@ import Link from "next/link"
 
 function Menu() {
     return (
-        <div className="w-full h-heightMenu flex justify-center overflow-x-hidden">
+        <div className="w-full h-heightMenu justify-center overflow-x-hidden hidden lg:flex">
             <div className="w-full h-full max-w-max-w-content flex items-center justify-between py-0 px-[30px]">
                 <ul className="gap-[50px]">
                     <li className="font-[900]">LuciFilms</li>
