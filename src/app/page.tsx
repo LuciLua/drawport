@@ -8,7 +8,7 @@ import Services from "../components/Services/Services"
 export default function HomePage() {
     return (
         <>
-            <div className="w-full h-fit flex justify-center items-center flex-col">
+            <div className="w-full h-fit flex justify-center items-center flex-col dark:bg-[#2c2d36]">
                 <Apresentation />
                 <Services />
                 <div className="flex flex-col max-w-max-w-content w-full min-h-[200px] justify-center items-center mb-40">

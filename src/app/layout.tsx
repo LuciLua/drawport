@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>LuciLua | Cinema Portfólio</title>
             </head>
-            <body className={`${montserrat.className}`}>
-                <Menu />
-                {children}
+            <body className={`${montserrat.className}`} >
+                <div className="dark:bg-[#2c2d36] bg-[#f3f3f3]">
+                    <Menu />
+                    {children}
+                </div>
             </body>
         </html>
     )
