@@ -28,7 +28,7 @@ function ToggleTheme() {
     }
 
     return (
-        <div className="absolute w-[30px] h-[30px] shadow-lg rounded-lg bg-slate-50 text-slate-500 font-normal flex justify-center items-center cursor-pointer"
+        <div className="absolute w-[30px] h-[30px] shadow-lg rounded-lg bg-slate-50 text-slate-500 font-normal flex justify-center items-center cursor-pointer hover:bg-[#5a5b65] hover:text-[#fff]"
             onClick={() => toggleClass()}>
             <BsMoonStars />
         </div>

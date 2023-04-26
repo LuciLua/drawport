@@ -18,7 +18,7 @@ function Apresentation() {
                     <Link className="rounded-[30px] border-[#3c3c3c] px-[15px] py-[20px] bg-[#3c3c3c] w-fit h-[30px] text-[#fff] flex justify-center items-center text-[15px]" href={'#'}>Projetos</Link>
                 </div >
             </div >
-            <div className="absolute flex-col gap-[30px] left-[20px] z-[2] hidden lg:flex">
+            <div className="absolute flex-col lg:flex-col gap-[30px] left-[20px] z-[2]  flex">
                 <Link href={'https://www.instagram.com/luci_lua81/'} className="dark:text-[#fff] text-[#121212] text-[20px] opacity-[0.8] transition-[0.3s] hover:opacity-[1] hover:scale-[1.1] hover:transition-[0.3s]">
                     <BsInstagram />
                 </Link>
