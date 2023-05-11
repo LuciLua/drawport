@@ -1,15 +1,13 @@
 function Service({ title, description, icon }) {
-    return (
-        <div className="shadow-[#1212120e] shadow-[0_0_13px] border-[#ddd] w-[260px] min-h-[320px] h-[fit-content] border-[2px] rounded-[3px] flex flex-col justify-center items-center">
-            <div className="text-[100px] text-[#bbb] py-3">
-                {icon}
-            </div>
-            <div className="p-4 text-[#bbb] gap-3 flex-col flex">
-                <h1 className="font-bold text-[24px] text-center">{title}</h1>
-                <p className="text-[14px] text-justify">{description}</p>
-            </div>
-        </div>
-    )
+  return (
+    <div className="flex h-[fit-content] min-h-[320px] w-[260px] flex-col items-center justify-center rounded-[3px] border-[2px] border-[#ddd] shadow-[0_0_13px] shadow-[#1212120e]">
+      <div className="py-3 text-[100px] text-[#bbb]">{icon}</div>
+      <div className="flex flex-col gap-3 p-4 text-[#bbb]">
+        <h1 className="text-center text-[24px] font-bold">{title}</h1>
+        <p className="text-justify text-[14px]">{description}</p>
+      </div>
+    </div>
+  );
 }
 
-export default Service
+export default Service;
