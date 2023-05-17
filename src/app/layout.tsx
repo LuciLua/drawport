@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <title>LuciLua | Cinema Portfólio</title>
       </head>
       <body className={`${montserrat.className}`}>
-        <div className="bg-[#f3f3f3] dark:bg-[#2c2d36]">
+        <div className="min-h-full bg-[#f3f3f3] dark:bg-[#2c2d36]">
           <Menu />
           {children}
         </div>

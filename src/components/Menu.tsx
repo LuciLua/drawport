@@ -38,11 +38,11 @@ function Menu() {
           </li>
           <li>
             <Link className="font-[500] text-inherit" href={"#"}>
-              Festival
+              Festivais
             </Link>
           </li>
           <li>
-            <Link className="font-[500] text-inherit" href={"#"}>
+            <Link className="font-[500] text-inherit" href={"/curtas"}>
               Curtas
             </Link>
           </li>
