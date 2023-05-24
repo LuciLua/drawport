@@ -9,9 +9,9 @@ function curtas() {
             <th>Link</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="flex justify-center items-center gap-10 flex-col">
           <tr>
-            <td>
+            <td className="justify-center items-center flex">
               <img width={300} src="thumbs/thumb.png" alt="" />
             </td>
             <td>Apocalice</td>
@@ -21,7 +21,7 @@ function curtas() {
             </td>
           </tr>
           <tr>
-            <td>
+            <td className="justify-center items-center flex">
               <img width={300} src="thumbs/meabraThumb.png" alt="" />
             </td>
             <td>Meabra</td>
@@ -31,7 +31,7 @@ function curtas() {
             </td>
           </tr>
           <tr>
-            <td>
+            <td className="justify-center items-center flex">
               <img width={300} src="thumbs/thumb.jpg" alt="" />
             </td>
             <td>Não temos tempo</td>
