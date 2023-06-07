@@ -5,14 +5,14 @@ function curtas() {
         <thead>
           <tr>
             <th>Thumbnail</th>
-            <th>Titulo</th>
+            <th>Título</th>
             <th>Link</th>
           </tr>
         </thead>
         <tbody className="flex justify-center items-center gap-10 flex-col">
           <tr>
             <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/thumb.png" alt="" />
+              <img width={300} src="thumbs/thumb.png" alt="thumbnail" />
             </td>
             <td>Apocalice</td>
             <td>description</td>
@@ -22,7 +22,7 @@ function curtas() {
           </tr>
           <tr>
             <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/meabraThumb.png" alt="" />
+              <img width={300} src="thumbs/meabraThumb.png" alt="thumbnail" />
             </td>
             <td>Meabra</td>
             <td>description</td>
@@ -32,7 +32,7 @@ function curtas() {
           </tr>
           <tr>
             <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/thumb.jpg" alt="" />
+              <img width={300} src="thumbs/thumb.jpg" alt="thumbnail" />
             </td>
             <td>Não temos tempo</td>
             <td>description</td>
