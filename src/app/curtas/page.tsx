@@ -1,47 +1,50 @@
-function curtas() {
+'use client'
+
+import { useEffect } from "react";
+
+type Project = { id: number; name: string; description: string; link?: string; image: string; functions: any };
+
+
+async function curtas() {
+
+  async function fetchProjects() {
+    const fetchData:any = await fetch('/data/projects.json',
+      {
+        next: {
+          revalidate: 10
+        }
+      })
+    const data = await fetchData.json()
+    const proj = await data.projetos
+    return proj
+  }
+
+  useEffect(() => {
+    fetchProjects()
+  }, [])
+
+  const projects: Project[] = await fetchProjects()
+
+
   return (
     <div className="p-10">
-      <table className="m-auto w-full rounded-[10px] bg-[#4b4c5c] text-white">
-        <thead>
-          <tr>
-            <th>Thumbnail</th>
-            <th>Título</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody className="flex justify-center items-center gap-10 flex-col">
-          <tr>
-            <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/thumb.png" alt="thumbnail" />
-            </td>
-            <td>Apocalice</td>
-            <td>description</td>
-            <td>
-              <a href="https://www.youtube.com/watch?v=ZKyUkvllalY">Link</a>
-            </td>
-          </tr>
-          <tr>
-            <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/meabraThumb.png" alt="thumbnail" />
-            </td>
-            <td>Meabra</td>
-            <td>description</td>
-            <td>
-              <a href="https://www.youtube.com/watch?v=P0IOfuk_XBE">Link</a>
-            </td>
-          </tr>
-          <tr>
-            <td className="justify-center items-center flex">
-              <img width={300} src="thumbs/thumb.jpg" alt="thumbnail" />
-            </td>
-            <td>Não temos tempo</td>
-            <td>description</td>
-            <td>
-              <a href="https://www.youtube.com/watch?v=Iqw3WB59lR0">Link</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="bg-slate-300 flex gap-10">
+        {
+          projects.map((p) => {
+            return (
+              <div key={p.id} className="m-2 bg-[#dcdcdc] p-5 w-[300px] flex flex-col">
+                <h1 className="font-bold text-[25px]">
+                  {p.name}
+                </h1>
+                <h3>{p.description}</h3>
+                {p.link ? <a className="text-blue-500" href={p.link}>Link</a> : null}
+                {p.functions}
+                <img className="w-[300px] h-[250px] object-contain flex" src={p.image} alt="" />
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 }

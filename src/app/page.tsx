@@ -11,7 +11,7 @@ export default function HomePage() {
       <div className="h-fit flex w-full flex-col items-center justify-center dark:bg-[#2c2d36]">
         <Apresentation />
         <Services />
-        <div className="mb-40 flex min-h-[200px] w-full max-w-max-w-content flex-col items-center justify-center">
+        {/* <div className="mb-40 flex min-h-[200px] w-full max-w-max-w-content flex-col items-center justify-center">
           <h1 className="mb-20 text-[30px] font-[400]">
             Ultimo Projeto Realizado
           </h1>
@@ -22,12 +22,7 @@ export default function HomePage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
-        </div>
-        {/* <div className={styles.sections}>
-                    <Section img={'/pernalonga2.png'} title="pernalonga" />
-                    <Section img={'/morcego.png'} title="morcego" />
-                    <Section img={'/morcego.png'} title="morcego" />
-                </div> */}
+        </div> */}
       </div>
     </>
   );

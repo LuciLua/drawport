@@ -1,0 +1,52 @@
+{
+    "projetos": [
+        {
+            "id": 0,
+            "name": "Apocalice",
+            "description": "Produção da primeira cena de um curta metragem. Cena esta realizada como resultado final de uma atividade avaliativa para a matéria de Produção na UFJF.",
+            "link": "https://www.youtube.com/watch?v=ZKyUkvllalY",
+            "image": "/thumbs/apocalice.png",
+            "functions": [
+                "produção",
+                "roteiro",
+                "montagem"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Meabra",
+            "description": "Produção de um curta metragem experimental para aperfeiçoamento de habilidades.",
+            "link": "https://www.youtube.com/watch?v=P0IOfuk_XBE",
+            "image": "/thumbs/meabra.png",
+            "functions": [
+                "produção",
+                "roteiro",
+                "montagem",
+                "câmera",
+                "som",
+                "direção"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Não Temos Tempo",
+            "description": "Produção da primeira cena de um curta metragem durante a matéria de 'Direção: teoria e prática' na UFJF.",
+            "link": "https://www.youtube.com/watch?v=Iqw3WB59lR0",
+            "image": "/thumbs/nao_temos_tempo.jpg",
+            "functions": [
+                "direção",
+                "montagem"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Fora da Caixa",
+            "description": "Captação de som para o curta metragem 'Fora da Caixa'.",
+            "link": "",
+            "image": "/thumbs/fora_da_caixa.jpg",
+            "functions": [
+                "Assistência de som"
+            ]
+        }
+    ]
+}
