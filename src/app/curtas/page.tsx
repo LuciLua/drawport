@@ -8,8 +8,7 @@ type Project = { id: number; name: string; description: string; link?: string; i
 async function curtas() {
 
   async function fetchProjects() {
-    const fetchData:any = await fetch('https://lucilua-film-portfolio-git-main-lucilua.vercel.app/data/projects.json',
-    // const fetchData:any = await fetch('http://localhost:3000/data/projects.json',
+    const fetchData:any = await fetch(`http://${window.location.href}/data/projects.json`,
       {
         next: {
           revalidate: 10
