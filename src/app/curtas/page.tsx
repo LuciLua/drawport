@@ -10,7 +10,7 @@ async function curtas() {
 
   async function fetchProjects() {
     // const fetchData = await axios.get('/data/projects.json')
-    const fetchData:any = await fetch(`http://localhost:3000/data/projects.json`,
+    const fetchData:any = await fetch(`https://lucilua-film-portfolio.vercel.app/data/projects.json`,
       {
         next: {
           revalidate: 10
