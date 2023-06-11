@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from "react";
+import axios from "axios"
 
 type Project = { id: number; name: string; description: string; link?: string; image: string; functions: any };
 
@@ -8,13 +9,15 @@ type Project = { id: number; name: string; description: string; link?: string; i
 async function curtas() {
 
   async function fetchProjects() {
-    const fetchData:any = await fetch(`http://${window.location.href}/data/projects.json`,
+    // const fetchData = await axios.get('/data/projects.json')
+    const fetchData:any = await fetch(`http://localhost:3000/data/projects.json`,
       {
         next: {
           revalidate: 10
         }
       })
     const data = await fetchData.json()
+    // const data = await fetchData.data()
     const proj = await data.projetos
     return proj
   }
@@ -30,6 +33,7 @@ async function curtas() {
     <div className="p-10">
       <div className="bg-slate-300 flex gap-10">
         {
+          projects ? 
           projects.map((p) => {
             return (
               <div key={p.id} className="m-2 bg-[#dcdcdc] p-5 w-[300px] flex flex-col">
@@ -43,6 +47,8 @@ async function curtas() {
               </div>
             )
           })
+          : 
+          null
         }
       </div>
     </div>
