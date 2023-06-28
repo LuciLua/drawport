@@ -64,7 +64,7 @@ async function curtas() {
                   <h3 className="text-[14px] font-normal line-clamp-4">{p.description}</h3>
                   {p.link ? <a className="text-blue-500" href={p.link}>Link</a> : null}
                   {/* {p.functions} */}
-                  <ul className="flex flex-row flex-wrap gap-[5px] mt-2">
+                  <ul className="flex flex-row flex-wrap gap-[5px] mt-2 mb-2">
                     {p.functions.map((func: string) => {
                       return <li className={`${setColorByFunction(func)} text-[12px] p-1 rounded-[4px] text-[#fff]`}>{func}</li>
                     })}
