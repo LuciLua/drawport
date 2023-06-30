@@ -14,8 +14,8 @@ type Project = {
 async function projetos() {
   async function fetchProjects() {
     // const fetchData = await fetch(
-      // "http://localhost:3000/curtas.json",
-      const fetchData: any = await fetch(`https://lucilua-film-portfolio.vercel.app/data/projects.json`,
+    // "http://localhost:3000/curtas.json",
+    const fetchData: any = await fetch(`https://lucilua-film-portfolio.vercel.app/data/projects.json`,
       {
         next: {
           revalidate: 10,
@@ -85,6 +85,7 @@ async function projetos() {
                   {p.functions.map((func: string) => {
                     return (
                       <li
+                        key={p.id}
                         className={`${setColorByFunction(
                           func
                         )} rounded-[4px] p-1 text-[12px] text-[#fff]`}
