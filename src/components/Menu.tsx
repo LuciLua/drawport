@@ -42,8 +42,8 @@ function Menu() {
             </Link>
           </li>
           <li>
-            <Link className="font-[500] text-inherit" href={"/curtas"}>
-              Curtas
+            <Link className="font-[500] text-inherit" href={"/projetos"}>
+              Projetos
             </Link>
           </li>
           <li>
