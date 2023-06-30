@@ -33,12 +33,7 @@ function Menu() {
         >
           <li>
             <Link className="font-[500] text-inherit" href={"/#"}>
-              Start
-            </Link>
-          </li>
-          <li>
-            <Link className="font-[500] text-inherit" href={"#"}>
-              Festivais
+              Homepage
             </Link>
           </li>
           <li>
@@ -49,11 +44,6 @@ function Menu() {
           <li>
             <Link className="font-[500] text-inherit" href={"/experimentos"}>
               Experimentos
-            </Link>
-          </li>
-          <li>
-            <Link className="font-[500] text-inherit" href={"#"}>
-              Trabalhos
             </Link>
           </li>
         </ul>
