@@ -1,9 +1,9 @@
 {
     "projetos": [
         {
-            "id": 0,
             "name": "Apocalice",
             "description": "Produção da primeira cena de um curta metragem. Cena esta realizada como resultado final de uma atividade avaliativa para a matéria de Produção na UFJF.",
+            "date": "2022-2023",
             "link": "https://www.youtube.com/watch?v=ZKyUkvllalY",
             "image": "/thumbs/apocalice.png",
             "functions": [
@@ -13,9 +13,9 @@
             ]
         },
         {
-            "id": 1,
             "name": "Meabra",
             "description": "Produção de um curta metragem experimental para aperfeiçoamento de habilidades.",
+            "date": "2023",
             "link": "https://www.youtube.com/watch?v=P0IOfuk_XBE",
             "image": "/thumbs/meabra.png",
             "functions": [
@@ -28,9 +28,9 @@
             ]
         },
         {
-            "id": 2,
             "name": "Não Temos Tempo",
             "description": "Produção da primeira cena de um curta metragem durante a matéria de 'Direção: teoria e prática' na UFJF.",
+            "date": "2023",
             "link": "https://www.youtube.com/watch?v=Iqw3WB59lR0",
             "image": "/thumbs/nao_temos_tempo.jpg",
             "functions": [
@@ -39,13 +39,65 @@
             ]
         },
         {
-            "id": 3,
             "name": "Fora da Caixa",
-            "description": "Captação de som para o curta metragem 'Fora da Caixa'.",
+            "description": "Captação de som (som direto) para o curta metragem 'Fora da Caixa'.",
+            "date": "2023",
             "link": "",
             "image": "/thumbs/fora_da_caixa.jpg",
             "functions": [
-                "Assistência de som"
+                "assistência de som"
+            ]
+        },
+        {
+            "name": "Clipe: Só Mais Essa Noite",
+            "description": "Captação de imagem para o Clipe 'Só Mais Essa Noite' e color grading.",
+            "date": "2023",
+            "link": "https://www.youtube.com/watch?v=hTeoTPmIAvA",
+            "image": "/thumbs/majuclipe.png",
+            "functions": [
+                "câmera",
+                "color grading"
+            ]
+        },
+        {
+            "name": "Documentário: Colonização no Continente Africano",
+            "description": "Produção de um documentário sobre a Colonização no Continente Africano para a matéria História da África.",
+            "date": "2021",
+            "link": "https://www.youtube.com/watch?v=hLRtgo1FeSI",
+            "image": "/thumbs/docafrica.png",
+            "functions": [
+                "edição",
+                "montagem",
+                "entrevista"
+            ]
+        },
+        {
+            "name": "Animação: Neutrum",
+            "description": "Produção de um curta de animação utilizando técnicas de 3D e 2D combinadas. Cenários em 3D realizados por mim no blender e também ",
+            "date": "2021",
+            "link": "https://www.youtube.com/watch?v=VrI2ILQvzAw",
+            "image": "/thumbs/neutrum.png",
+            "functions": [
+                "edição",
+                "montagem",
+                "roteiro",
+                "cenários 3D",
+                "finalização",
+                "sound effects"
+            ]
+        },
+        {
+            "name": "Animação: A Vingança da Pomba",
+            "description": "Produção de uma animação para a matéria Imagem Digital 3D.",
+            "date": "2019",
+            "link": "https://www.youtube.com/watch?v=d1iIKCi0Gvc",
+            "image": "/thumbs/pomba.png",
+            "functions": [
+                "edição",
+                "montagem",
+                "cenários 3D",
+                "roteiro",
+                "finalização"
             ]
         }
     ]
