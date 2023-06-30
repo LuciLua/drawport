@@ -49,7 +49,7 @@ async function projetos() {
       case "assistência de som":
         return "bg-[#f0a]";
       case "direção":
-        return "bg-[#FA8366]";
+        return "bg-[#E32B20]";
       case "color grading":
         return "bg-[#D93B6A]";
       case "edição":
