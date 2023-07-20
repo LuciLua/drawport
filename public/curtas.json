@@ -1,6 +1,20 @@
 {
     "projetos": [
         {
+            "name": "Gimmy Manga: O Passarinho Atrapalhado",
+            "description": "Produção de uma animação para a matéria de Animação na UFJF.",
+            "date": "2023",
+            "link": "https://www.youtube.com/watch?v=CpKowB5zL04",
+            "image": "https://i.ytimg.com/vi/CpKowB5zL04/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhOIGAoZTAP&rs=AOn4CLDGTHMBalQfqNlYoJd3n_mNd7LaTA",
+            "functions": [
+                "produção",
+                "roteiro",
+                "animação",
+                "edição",
+                "montagem"
+            ]
+        },
+        {
             "name": "Apocalice",
             "description": "Produção da primeira cena de um curta metragem. Cena esta realizada como resultado final de uma atividade avaliativa para a matéria de Produção na UFJF.",
             "date": "2022-2023",
