@@ -107,6 +107,21 @@
                 "roteiro",
                 "finalização"
             ]
+        },
+        {
+            "id": 8,
+            "name": "Gimmy Manga: O Passarinho Atrapalhado",
+            "description": "Produção de uma animação para a matéria de Animação na UFJF.",
+            "date": "2023",
+            "link": "https://www.youtube.com/watch?v=CpKowB5zL04",
+            "image": "https://i.ytimg.com/vi/CpKowB5zL04/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhOIGAoZTAP&rs=AOn4CLDGTHMBalQfqNlYoJd3n_mNd7LaTA",
+            "functions": [
+                "produção",
+                "roteiro",
+                "animação",
+                "edição",
+                "montagem"
+            ]
         }
     ]
 }
