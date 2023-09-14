@@ -1,5 +1,3 @@
-"use client";
-
 import Apresentation from "../components/Apresentation";
 import Services from "../components/Services/Services";
 
