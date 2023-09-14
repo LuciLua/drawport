@@ -1,5 +1,7 @@
-function ProjetosCards({ projeto }: { projeto: any }) {
-// async function ProjetosCards({ projeto }: { projeto: any }) {
+import { TProjetos } from "../types/TProjetos";
+
+// function ProjetosCards({ projeto }: { projeto: TProjetos }) {
+async function ProjetosCards({ projeto }: { projeto: TProjetos }) {
 
     function setColorByFunction(func: string) {
         switch (func) {
@@ -30,11 +32,11 @@ function ProjetosCards({ projeto }: { projeto: any }) {
         }
     }
 
-    // await new Promise((resolve) => { setTimeout(resolve, 50000) })
+    await new Promise((resolve) => { setTimeout(resolve, 2000) })
 
     return (
         <div
-            key={projeto.id}
+            key={projeto._id}
             className="
                 h-[fit-content] m-2 flex w-[300px] min-w-[250px] flex-col rounded-[8px] border-[1px] border-[#e6e6ea] bg-[#fff] p-5 text-black dark:border-[#403f3f] dark:bg-[#1f2026] dark:text-[#a6a6a6]">
             <h1 className="mb-2 text-[22px] font-bold dark:text-[#fff]">
@@ -47,7 +49,7 @@ function ProjetosCards({ projeto }: { projeto: any }) {
                 {projeto.functions.map((func: string) => {
                     return (
                         <li
-                            key={projeto.id}
+                            key={`${projeto._id}_${func}`}
                             className={`${setColorByFunction(func)} rounded-[4px] p-1 text-[12px] text-[#fff]`}>
                             {func}
                         </li>
