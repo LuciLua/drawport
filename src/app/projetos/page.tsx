@@ -5,8 +5,8 @@ import { TProjetos } from "../../types/TProjetos";
 
 async function projetos() {
 
+  // var pathname = 'localhost:3000'
   var pathname = 'lucilua-film-portfolio.vercel.app'
-  var pathname = 'localhost:3000'
   
   let path = `http://${pathname}/api/projects`
 
