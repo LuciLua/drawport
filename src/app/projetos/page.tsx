@@ -8,7 +8,7 @@ async function projetos() {
   var path = 'http://lucilua-film-portfolio.vercel.app/api/projects'
   // const path = `http://localhost:3000/api/projects`
 
-  const response = await fetch(path, { next: { revalidate: 180 } })
+  const response = await fetch(path, { next: { revalidate: 10 } })
   const jsonResponse = await response.json()
   const projects: TProjetos[] = await jsonResponse.projetos
 
