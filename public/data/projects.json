@@ -6,7 +6,7 @@
             "description": "Produção da primeira cena de um curta metragem. Cena esta realizada como resultado final de uma atividade avaliativa para a matéria de Produção na UFJF.",
             "date": "2022-2023",
             "link": "https://www.youtube.com/watch?v=ZKyUkvllalY",
-            "image": "/thumbs/apocalice.png",
+            "image": "/thumbs/compressed/apocalice.jpg",
             "functions": [
                 "produção",
                 "roteiro",
@@ -19,7 +19,7 @@
             "description": "Produção de um curta metragem experimental para aperfeiçoamento de habilidades.",
             "date": "2023",
             "link": "https://www.youtube.com/watch?v=P0IOfuk_XBE",
-            "image": "/thumbs/meabra.png",
+            "image": "/thumbs/compressed/meabra.jpg",
             "functions": [
                 "produção",
                 "roteiro",
@@ -35,7 +35,7 @@
             "description": "Produção da primeira cena de um curta metragem durante a matéria de 'Direção: teoria e prática' na UFJF.",
             "date": "2023",
             "link": "https://www.youtube.com/watch?v=Iqw3WB59lR0",
-            "image": "/thumbs/nao_temos_tempo.jpg",
+            "image": "/thumbs/compressed/nao_temos_tempo.jpg",
             "functions": [
                 "direção",
                 "montagem"
@@ -47,7 +47,7 @@
             "description": "Captação de som (som direto) para o curta metragem 'Fora da Caixa'.",
             "date": "2023",
             "link": "",
-            "image": "/thumbs/fora_da_caixa.jpg",
+            "image": "/thumbs/compressed/fora_da_caixa.jpg",
             "functions": [
                 "assistência de som"
             ]
@@ -58,7 +58,7 @@
             "description": "Captação de imagem para o Clipe 'Só Mais Essa Noite' e color grading.",
             "date": "2023",
             "link": "https://www.youtube.com/watch?v=hTeoTPmIAvA",
-            "image": "/thumbs/majuclipe.png",
+            "image": "/thumbs/compressed/majuclipe.jpg",
             "functions": [
                 "câmera",
                 "color grading"
@@ -70,7 +70,7 @@
             "description": "Produção de um documentário sobre a Colonização no Continente Africano para a matéria História da África.",
             "date": "2021",
             "link": "https://www.youtube.com/watch?v=hLRtgo1FeSI",
-            "image": "/thumbs/docafrica.png",
+            "image": "/thumbs/compressed/docafrica.jpg",
             "functions": [
                 "edição",
                 "montagem",
@@ -83,7 +83,7 @@
             "description": "Produção de um curta de animação utilizando técnicas de 3D e 2D combinadas. Cenários em 3D realizados por mim no blender e também ",
             "date": "2021",
             "link": "https://www.youtube.com/watch?v=VrI2ILQvzAw",
-            "image": "/thumbs/neutrum.png",
+            "image": "/thumbs/compressed/neutrum.jpg",
             "functions": [
                 "edição",
                 "montagem",
@@ -99,7 +99,7 @@
             "description": "Produção de uma animação para a matéria Imagem Digital 3D.",
             "date": "2019",
             "link": "https://www.youtube.com/watch?v=d1iIKCi0Gvc",
-            "image": "/thumbs/pomba.png",
+            "image": "/thumbs/compressed/pomba.jpg",
             "functions": [
                 "edição",
                 "montagem",
