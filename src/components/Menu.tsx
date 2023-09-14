@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import ToggleTheme from "./ToggleTheme";
-import { AiOutlineMenu } from "react-icons/ai";
 import HandlerMenu from "./HandlerMenu";
 
 function Menu() {
@@ -31,21 +30,21 @@ function Menu() {
           className="mt-[50px] hidden w-full items-center justify-center gap-[50px] text-[#000] dark:text-[#fff] lg:mt-0 lg:flex"
           id="ham"
         >
-          <li>
-            <Link className="font-[500] text-inherit" href={"/#"}>
+          <Link className="font-[500] text-inherit" href={"/#"}>
+            <li>
               Homepage
-            </Link>
-          </li>
-          <li>
-            <Link className="font-[500] text-inherit" href={"/projetos"}>
+            </li>
+          </Link>
+          <Link className="font-[500] text-inherit" href={"/projetos"}>
+            <li>
               Projetos
-            </Link>
-          </li>
-          <li>
-            <Link className="font-[500] text-inherit" href={"/experimentos"}>
+            </li>
+          </Link>
+          <Link className="font-[500] text-inherit" href={"/experimentos"}>
+            <li>
               Experimentos
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
         <ul className="absolute right-5 top-5 mr-3 flex gap-3">
           <li className="flex font-[600] lg:hidden" onClick={open}>

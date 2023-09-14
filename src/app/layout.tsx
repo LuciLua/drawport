@@ -1,10 +1,7 @@
-// 'use client'
-
 import "../styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Menu from "../components/Menu";
-
-// import { AnimatePresence } from "framer-motion"
+import ThemeContextProvider from "../contexts/ThemeContext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,10 +18,12 @@ export default function RootLayout({ children }) {
         <title>LuciLua | Cinema Portfólio</title>
       </head>
       <body className={`${montserrat.className}`}>
-        <div className="min-h-full bg-[#f3f3f3] dark:bg-[#2c2d36]">
-          <Menu />
-          {children}
-        </div>
+        <ThemeContextProvider>
+          <div className="min-h-full bg-[#f3f3f3] dark:bg-[#2c2d36] transition-[2s]">
+            <Menu />
+            {children}
+          </div>
+        </ThemeContextProvider>
       </body>
     </html>
   );
