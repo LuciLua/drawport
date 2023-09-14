@@ -1,5 +1,8 @@
 import { Db } from "mongodb";
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion } = require('mongodb')
+
+let cacheDb: Db = null;
+
 
 async function connectToDatabase() {
 
@@ -9,32 +12,33 @@ async function connectToDatabase() {
 
     let uri = `mongodb+srv://${username}:${password}@${cluster}/?retryWrites=true&w=majority`
 
-    let cacheDb: Db = null;
-    cacheDb && cacheDb
-
-
+    if (cacheDb) {
+        return cacheDb;
+      }
 
     // Create a MongoClient with a MongoClientOptions object to set the Stable API version
     const client = new MongoClient(uri, {
-        serverApi: {
-            version: ServerApiVersion.v1,
-            strict: true,
-            deprecationErrors: true,
-        }
+        // serverApi: {
+        //     version: ServerApiVersion.v1,
+        //     strict: true,
+        //     deprecationErrors: true,
+        // }
     });
 
     try {
         await client.connect()
+        const database = await client.db('cinemaport'); // Nome do banco de dados
+        cacheDb = database;
 
-        const database = client.db('cinemaport'); // Nome do banco de dados
-        const collection = database.collection('projetos'); // Nome da coleção
-    
+        const collection = cacheDb.collection('projetos'); // Nome da coleção
+
         const projetos = await collection.find({}).toArray();
         return projetos
 
     } catch (err) {
         console.error(err)
     } finally {
+
         await client.close()
     }
 }
